@@ -878,8 +878,7 @@ extension KSTokenView : UITextFieldDelegate {
       // Remove character at that index
       if (string.isEmpty) {
         let first = String(olderText![..<olderText!.index(olderText!.startIndex, offsetBy: range.location)])
-        let second = String(olderText![olderText!.index(olderText!.startIndex, offsetBy: range.location+1)..<olderText!.endIndex])
-         searchString = first + second
+         searchString = first
          searchString = searchString.trimmingCharacters(in: CharacterSet.whitespaces)
          
       } else { // new character added
