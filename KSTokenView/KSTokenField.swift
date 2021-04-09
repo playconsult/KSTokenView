@@ -49,7 +49,7 @@ open class KSTokenField: UITextField {
    fileprivate var _setupCompleted: Bool = false
    fileprivate var _selfFrame: CGRect?
    fileprivate var _caretPoint: CGPoint?
-   fileprivate var _placeholderValue: String?
+   open var _placeholderValue: String?
    fileprivate var _placeholderLabel: UILabel?
    fileprivate var _state: KSTokenFieldState = .opened
    fileprivate var _minWidthForInput: CGFloat = 50.0
